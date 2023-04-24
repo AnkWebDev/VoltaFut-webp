@@ -1,0 +1,124 @@
+
+
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  
+        <style>
+            .portfolio .portfolio-item {
+  margin-bottom: 30px;
+}
+
+.portfolio #portfolio-flters {
+  padding: 0;
+  margin: 0 auto 20px auto;
+  list-style: none;
+  text-align: center;
+}
+
+.portfolio #portfolio-flters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 8px 15px 10px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #444444;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 3px;
+}
+
+.portfolio #portfolio-flters li:hover,
+.portfolio #portfolio-flters li.filter-active {
+  color: #151515;
+  background: #ffc451;
+}
+
+.portfolio #portfolio-flters li:last-child {
+  margin-right: 0;
+}
+
+.portfolio .portfolio-wrap {
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  background: rgba(21, 21, 21, 0.6);
+}
+        </style>
+      </head>
+      <body>
+        <section id="portfolio" class="portfolio">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>Working</h2>
+        <p>How It Works</p>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-12 d-flex justify-content-center">
+              <ul id="portfolio-flters">
+                <button class="P-Auc" onclick="NoneFu()">Player Auction</button>
+                <!-- <li data-filter=".filter-app">App</li> -->
+                 <button class="C-trade" onclick="Change()">Comfort Trade</button>
+              </ul>
+            </div>
+          </div>
+  
+          <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">         
+  
+           
+            <div class="col-lg-12 col-md-12 portfolio-item filter-app" id="P-Auc">
+              <div class="portfolio-wrap">
+  
+                <div class="para1 text-center">
+                  <p >After you have successfully paid for the order and indicated your balance from the game, the system will offer you to buy a player on the transfer market that will be used to transfer the FIFA coins to you.<br>
+                  </p>             
+                </div>
+            </div>
+        </div>
+            
+
+        <div class="col-lg-12 col-md-12  portfolio-item filter-web" id="C-trade">
+          <div class="portfolio-wrap">
+            <div class="para2 text-center" id="para-2" >
+            <p>After successful payment of the order you'll be taken to page with two fields : <br>
+              E-mail and Password. Please, fulfill these fields with your EA Account Details</p>
+        </div>
+           
+          </div>
+        </div>
+
+        </div>
+    </div><!-- End .content-->
+  </section>
+
+
+
+      </div>
+
+   
+      <script>
+
+        function NoneFu(){
+    document.getElementById('p-Auc').style.display = "block";
+    document.getElementById('C-trade').style.display = "none";
+  }
+  
+  function Change(){
+    document.getElementById('C-trade').style.display = "block";
+    document.getElementById('p-Auc').style.display = "none";
+  }
+
+
+      </script>
+      </body>
+      </html>Z
