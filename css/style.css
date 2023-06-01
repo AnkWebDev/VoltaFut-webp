@@ -650,8 +650,13 @@ section {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 315px;
+  min-height: 300px;
 }
+.features .image img{
+  height: 100%;
+  width: 100%;
+}
+
 
 /*--------------------------------------------------------------
 # Services
